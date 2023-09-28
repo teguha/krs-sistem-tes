@@ -85,6 +85,10 @@ class DosenController extends Controller
         $check = User::where('email',$request->email)->orWhere('nim',$request->nim)->get();
         if($check->isEmpty()){
             $user->name = $request->name;
+            $user->email = $request->email;
+            $user->nim = $request->nim;
+            $user->password = $nim.'unud';
+            $user->save();
         }
         
     }
