@@ -84,13 +84,4 @@ class LoginController extends Controller
         }
     }
 
-    
-    
-    // public function tes(){
-    //     return response()->json([
-    //         'response_code' => 200,
-    //         'message' => 'Login Berhasil',
-    //         //'conntent' => $token
-    //     ]);
-    // }
 }
