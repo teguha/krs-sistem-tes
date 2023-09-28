@@ -15,10 +15,6 @@ class Authenticate extends Middleware
     protected function redirectTo($request)
     { 
         $apiKey = $request->header('x-api-key');
-
-        // if($apiKey != 'krs_unud'){
-        //     return 'token invalid';
-        // }
     
         if (! $request->expectsJson()) {
             return route('login');
